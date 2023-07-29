@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/City Build/Scenes/MainScene.unity
+    guid: d3f39c4a95a7f499bb7237adaa0b6346
+  - enabled: 1
+    path: Assets/Dungeon/Scenes/LoadingScene.unity
+    guid: d532dc0db26b468499443fccda62ef6a
+  - enabled: 1
+    path: Assets/Dungeon/Scenes/GameUI.unity
+    guid: c7da2b7c0d79d8e4f8ce679e284f9822
+  - enabled: 1
+    path: Assets/Dungeon/Scenes/Levels/Lvl_0.unity
+    guid: 85a4de67c0299c24faa1ae9973fef5ad
+  - enabled: 1
+    path: Assets/Dungeon/Scenes/Levels/Lvl_1.unity
+    guid: 02a920e0e42f03e4dbcd80bba79bb229
+  m_configObjects: {}
