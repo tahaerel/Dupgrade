@@ -510,7 +510,7 @@ public class SceneManager : MonoBehaviour
     public void EnterDungeonMode()
     {
 
-		UnityEngine.SceneManagement.SceneManager.LoadScene(2);
+		UnityEngine.SceneManagement.SceneManager.LoadScene(3);
 
     }
     public List<BaseItemScript> GetAllItems()
