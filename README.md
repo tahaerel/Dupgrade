@@ -1,6 +1,6 @@
 # Dupgrade
 
-Our goal in this game is to develop our village to mine more minerals (Gold, steel, diamond etc.), to strengthen our character's equipment with the minerals we extract, so that we can hunt creatures in dangerous dungeons and get rewards such as NFTs and tokens. <br>
+Our goal in this game is to develop our village to mine more minerals (Gold, Steel, Diamond etc.), to strengthen our character's equipment with the minerals we extract, so that we can hunt creatures in dangerous dungeons and get rewards such as NFTs and tokens. <br>
 
 Examples of these NFTs;
 <br>
