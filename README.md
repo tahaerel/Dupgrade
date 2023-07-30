@@ -20,7 +20,9 @@ Examples of these NFTs;
 <br>
 <h2>Gameplay Video</h2>
 https://github.com/tahaerel/Dupgrade/assets/63150746/9bd99feb-dd47-4709-9693-a53b6e8ea199 
-
+<video >
+<source src="https://github.com/tahaerel/Dupgrade/assets/63150746/9bd99feb-dd47-4709-9693-a53b6e8ea199" type="video/mp4">
+</video>
 <h2> Play Demo </h2>
 
 https://pushup.games/dupgrade/
