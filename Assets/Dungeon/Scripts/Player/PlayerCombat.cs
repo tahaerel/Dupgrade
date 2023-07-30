@@ -26,7 +26,7 @@ namespace DungeonKIT
             {
 
                 //Check active platform
-#if UNITY_STANDALONE // PC,WIN,MAC
+#if UNITY_STANDALONE || UNITY_WEBGL// PC,WIN,MAC
 
                 if (InputManager.Attack) //if player press attack button
                 {
@@ -47,7 +47,7 @@ namespace DungeonKIT
         void Attack()
         {
             //Check active platform
-#if UNITY_STANDALONE // PC,WIN,MAC
+#if UNITY_STANDALONE || UNITY_WEBGL// PC,WIN,MAC
 
             if (InputManager.Attack)
             {
@@ -78,7 +78,7 @@ namespace DungeonKIT
             rangeWeapon.transform.position = transform.position; //Set weapon postion
 
             //Check active platform
-#if UNITY_STANDALONE // PC,WIN,MAC
+#if UNITY_STANDALONE || UNITY_WEBGL// PC,WIN,MAC
 
             Vector3 mousePosition = Input.mousePosition; //Cache mouse position
             mousePosition = Camera.main.ScreenToWorldPoint(mousePosition); //calculate the mouse position relative to the screen and the world

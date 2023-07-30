@@ -7,7 +7,7 @@ namespace DungeonKIT
     public class InputManager
     {
         //Check active platform
-#if UNITY_STANDALONE // PC,WIN,MAC
+#if UNITY_STANDALONE || UNITY_WEBGL// PC,WIN,MAC
 
         public static float Vertical { get { return Input.GetAxis("Vertical"); } }  //Variable of vertical controller
         public static float Horizontal { get { return Input.GetAxis("Horizontal"); } } //Variable of Horizontal controller
@@ -35,7 +35,7 @@ namespace DungeonKIT
 
 
         //Check active platform
-#if UNITY_STANDALONE // PC,WIN,MAC
+#if UNITY_STANDALONE || UNITY_WEBGL// PC,WIN,MAC
 
         public static bool Interaction { get { return Input.GetKeyDown(InputSettings.InteractionKey); } set { } }
 

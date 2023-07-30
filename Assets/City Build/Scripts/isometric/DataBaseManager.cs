@@ -87,8 +87,6 @@ public class DataBaseManager : MonoBehaviour
 	    "{\"items\":[" + 
 	    "{\"instanceId\":1,\"itemId\":3635,\"posX\":37,\"posZ\":19}," +
 	    "{\"instanceId\":2,\"itemId\":2496,\"posX\":22,\"posZ\":23},"+
-	    "{\"instanceId\":3,\"itemId\":2728,\"posX\":28,\"posZ\":15},"+
-	    "{\"instanceId\":4,\"itemId\":2728,\"posX\":18,\"posZ\":24},"+
         "{\"instanceId\":36894,\"itemId\":9074,\"posX\":28,\"posZ\":20}," +
 	    "{\"instanceId\":66286,\"itemId\":9074,\"posX\":20,\"posZ\":30},"+
 	    "{\"instanceId\":21809,\"itemId\":8833,\"posX\":23,\"posZ\":18},"+
@@ -98,7 +96,6 @@ public class DataBaseManager : MonoBehaviour
         "{\"instanceId\":42821,\"itemId\":9074,\"posX\":30,\"posZ\":26}," +
         "{\"instanceId\":61823,\"itemId\":8833,\"posX\":14,\"posZ\":19}," +
 	   
-	    "{\"instanceId\":29249,\"itemId\":2728,\"posX\":33,\"posZ\":18},"+
 	    "{\"instanceId\":86916,\"itemId\":5341,\"posX\":42,\"posZ\":39},"+
 	    "{\"instanceId\":77332,\"itemId\":5341,\"posX\":31,\"posZ\":40},"+
 	    "{\"instanceId\":21622,\"itemId\":5341,\"posX\":33,\"posZ\":41},"+

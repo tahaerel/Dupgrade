@@ -62,7 +62,7 @@ namespace DungeonKIT
         void Rotation()
         {
             //Check active platform
-#if UNITY_STANDALONE // PC,WIN,MAC
+#if UNITY_STANDALONE || UNITY_WEBGL// PC,WIN,MAC
 
             //If mouse in right side of screen
             if (InputManager.MouseXPositon > 0.5f)
