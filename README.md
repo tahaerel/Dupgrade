@@ -8,6 +8,7 @@ Examples of these NFTs;
 -Rare Equipment (Armor, Sword, Bow, etc.).
 
 <br>
+<h2>Timeline<h2> <br>
 -The more mine collectors and storage areas players buy, the more ore they can passively mine.<br>
 -With the mines they mine, they produce new equipment from the village building. <br>
 -Customize your character with more powerful equipment.<br>
@@ -15,3 +16,5 @@ Examples of these NFTs;
 -Defeat the boss at the end of the dungeon and access the mystery box.<br>
 -The NFT from the mystery box can be used or sold in the marketplace.<br>
 -Players can improve their villages faster by buying Dupgrade tokens.<br>
+<br>
+<h2>Gameplay Video<h2><br>
