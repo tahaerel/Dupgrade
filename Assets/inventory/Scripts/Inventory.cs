@@ -7,6 +7,7 @@ public class Inventory : MonoBehaviour
 {
     public static Inventory Singleton;
     public static InventoryItem carriedItem;
+    public int k;
 
     [SerializeField] InventorySlot[] inventorySlots;
     [SerializeField] InventorySlot[] hotbarSlots;
@@ -25,10 +26,19 @@ public class Inventory : MonoBehaviour
     int k = 0;
     void Awake()
     {
+        
         Singleton = this;
         giveItemBtn.onClick.AddListener( delegate { SpawnInventoryItem(); } );
     }
+    private void Start()
+    {
+        for (int i = 0; i < 6; i++)
+        {
+            SpawnInventoryItem();
+        }
+        
 
+    }
     void Update()
     {
         if(carriedItem == null) return;
@@ -96,9 +106,10 @@ public class Inventory : MonoBehaviour
 
     Item PickRandomItem()
     {
-        
-        //int random = Random.Range(0, items.Length);
+
         k++;
+
+        //int random = Random.Range(0, items.Length);
         return items[k];
     }
 }
