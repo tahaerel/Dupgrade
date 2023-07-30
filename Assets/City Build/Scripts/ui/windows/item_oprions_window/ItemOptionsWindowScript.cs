@@ -38,8 +38,9 @@ public class ItemOptionsWindowScript : WindowScript {
 	private IEnumerator _ShowOptions()
 	{
 		BaseItemScript selectedItem = SceneManager.instance.selectedItem;
-        if (selectedItem.itemData.name == "Barrack")
-            haveTrainButton = true;
+       
+		if (selectedItem.itemData.name == "TownCenter")
+			haveTrainButton = true;
 
 		haveInfoButton = true;
 		haveUpgradeButton = true;
