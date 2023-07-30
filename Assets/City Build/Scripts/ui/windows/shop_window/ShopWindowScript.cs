@@ -18,7 +18,7 @@ public class ShopWindowScript : WindowScript {
 		DEFENCE,
 		RESOURCES,
 		OTHER,
-		TREASURE,
+		NFT,
 		DECORATIONS
 	}
 
@@ -61,7 +61,7 @@ public class ShopWindowScript : WindowScript {
             Category.RESOURCES,
             Category.OTHER,
             Category.DECORATIONS,
-            Category.TREASURE,
+            Category.NFT,
             Category.ARMY,
 			Category.DEFENCE,
         };
@@ -102,7 +102,7 @@ public class ShopWindowScript : WindowScript {
 		case Category.RESOURCES:
 			subItems = new SubCategory[]{ SubCategory.ELIXIR_COLLECTOR, SubCategory.ELIXIR_STORAGE, SubCategory.GOLD_MINE, SubCategory.GOLD_STORAGE, SubCategory.WINDMILL};
 			break;
-		case Category.TREASURE:
+		case Category.NFT:
 			subItems = new SubCategory[]{ SubCategory.GEMS};
 			break;
 		}

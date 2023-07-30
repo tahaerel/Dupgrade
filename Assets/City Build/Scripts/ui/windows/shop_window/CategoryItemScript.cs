@@ -54,10 +54,13 @@ public class CategoryItemScript : MonoBehaviour {
                 this.Name.text = "RESOURCES";
 			this.Image.sprite = this.ResourcesSprite;
 			break;
-		case ShopWindowScript.Category.TREASURE:
-                this.buton.enabled = true;
-                this.locked.SetActive(false);
-                this.Name.text = "TREASURE";
+		case ShopWindowScript.Category.NFT:
+                var tempColor3 = this.Image.color;
+                tempColor3.a = 0.3f;
+				this.Image.color = tempColor3;
+                this.buton.enabled = false;
+                this.locked.SetActive(true);
+                this.Name.text = "NFT MARKET";
 			this.Image.sprite = this.TreasureSprite;
 			break;
 		case ShopWindowScript.Category.DECORATIONS:
