@@ -26,3 +26,4 @@ https://github.com/tahaerel/Dupgrade/assets/63150746/b32ec711-2d02-4f56-b270-061
 <h2> Play Demo </h2>
 
 https://pushup.games/dupgrade/
+(wait an average of 10 seconds on the white screen)
