@@ -11,7 +11,8 @@ Examples of these NFTs;
 -Rare Equipment (Armor, Sword, Bow, etc.).
 
 <br>
-<h2>Timeline<h2> <br>
+<h2>Timeline<h2>
+<br>
 -The more mine collectors and storage areas players buy, the more ore they can passively mine.<br>
 -With the mines they mine, they produce new equipment from the village building. <br>
 -Customize your character with more powerful equipment.<br>
