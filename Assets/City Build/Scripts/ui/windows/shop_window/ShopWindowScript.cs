@@ -58,13 +58,13 @@ public class ShopWindowScript : WindowScript {
 		this.ClearItemsList ();
 
 		Category[] categories = new Category[] {
-			Category.ARMY,
-			Category.DECORATIONS,
+            Category.RESOURCES,
+            Category.OTHER,
+            Category.DECORATIONS,
+            Category.TREASURE,
+            Category.ARMY,
 			Category.DEFENCE,
-			Category.OTHER,
-			Category.RESOURCES,
-			Category.TREASURE
-		};
+        };
 
 		for (int index = 0; index < categories.Length; index++) {
 			GameObject inst = Utilities.CreateInstance (this.CategoryItem, this.ItemsList, true);

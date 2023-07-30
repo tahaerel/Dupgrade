@@ -89,17 +89,15 @@ public class DataBaseManager : MonoBehaviour
 	    "{\"instanceId\":2,\"itemId\":2496,\"posX\":22,\"posZ\":23},"+
 	    "{\"instanceId\":3,\"itemId\":2728,\"posX\":28,\"posZ\":15},"+
 	    "{\"instanceId\":4,\"itemId\":2728,\"posX\":18,\"posZ\":24},"+
-	    "{\"instanceId\":59892,\"itemId\":4764,\"posX\":32,\"posZ\":14},"+
-	    "{\"instanceId\":36894,\"itemId\":4764,\"posX\":28,\"posZ\":20},"+
+        "{\"instanceId\":36894,\"itemId\":9074,\"posX\":28,\"posZ\":20}," +
 	    "{\"instanceId\":66286,\"itemId\":9074,\"posX\":20,\"posZ\":30},"+
 	    "{\"instanceId\":21809,\"itemId\":8833,\"posX\":23,\"posZ\":18},"+
 	    "{\"instanceId\":31911,\"itemId\":3265,\"posX\":18,\"posZ\":19},"+
 	    "{\"instanceId\":15113,\"itemId\":4856,\"posX\":15,\"posZ\":29},"+
 	    "{\"instanceId\":56078,\"itemId\":2949,\"posX\":41,\"posZ\":41},"+
-	    "{\"instanceId\":42821,\"itemId\":4764,\"posX\":30,\"posZ\":26},"+
-	    "{\"instanceId\":61823,\"itemId\":4764,\"posX\":14,\"posZ\":19},"+
-	    "{\"instanceId\":71678,\"itemId\":1712,\"posX\":22,\"posZ\":12},"+
-	    "{\"instanceId\":20344,\"itemId\":1712,\"posX\":11,\"posZ\":24},"+
+        "{\"instanceId\":42821,\"itemId\":9074,\"posX\":30,\"posZ\":26}," +
+        "{\"instanceId\":61823,\"itemId\":8833,\"posX\":14,\"posZ\":19}," +
+	   
 	    "{\"instanceId\":29249,\"itemId\":2728,\"posX\":33,\"posZ\":18},"+
 	    "{\"instanceId\":86916,\"itemId\":5341,\"posX\":42,\"posZ\":39},"+
 	    "{\"instanceId\":77332,\"itemId\":5341,\"posX\":31,\"posZ\":40},"+
