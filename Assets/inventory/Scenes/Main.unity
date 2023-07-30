@@ -324,7 +324,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Sword : 35'
+  m_text: 'Sword : 50'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4ce034de9c1fb5949bd9a9da883e7bf4, type: 2}
   m_sharedMaterial: {fileID: -3359197029103750868, guid: 4ce034de9c1fb5949bd9a9da883e7bf4,
@@ -2326,6 +2326,14 @@ MonoBehaviour:
   "g\xF6vde": {fileID: 0}
   ayak: {fileID: 0}
   pantalon: {fileID: 0}
+  kilic: {fileID: 0}
+  armorHead: 0
+  armorChest: 0
+  armorLegs: 0
+  armorfeet: 0
+  totalarmor: 0
+  armortext: {fileID: 0}
+  swordpower: {fileID: 0}
   inventorySlots:
   - {fileID: 641420150}
   - {fileID: 90546206}
@@ -3359,6 +3367,14 @@ MonoBehaviour:
   "g\xF6vde": {fileID: 0}
   ayak: {fileID: 0}
   pantalon: {fileID: 0}
+  kilic: {fileID: 0}
+  armorHead: 0
+  armorChest: 0
+  armorLegs: 0
+  armorfeet: 0
+  totalarmor: 0
+  armortext: {fileID: 0}
+  swordpower: {fileID: 0}
   inventorySlots:
   - {fileID: 1703846096}
   - {fileID: 1149841633}
@@ -15068,7 +15084,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Defence : 40'
+  m_text: 'Defence : 0'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4ce034de9c1fb5949bd9a9da883e7bf4, type: 2}
   m_sharedMaterial: {fileID: -3359197029103750868, guid: 4ce034de9c1fb5949bd9a9da883e7bf4,
@@ -15973,6 +15989,14 @@ MonoBehaviour:
   "g\xF6vde": {fileID: 157803050}
   ayak: {fileID: 291936453}
   pantalon: {fileID: 1701620898}
+  kilic: {fileID: 0}
+  armorHead: 0
+  armorChest: 0
+  armorLegs: 0
+  armorfeet: 0
+  totalarmor: 0
+  armortext: {fileID: 1721074017}
+  swordpower: {fileID: 31835736}
   inventorySlots:
   - {fileID: 1931694329}
   - {fileID: 1641692952}

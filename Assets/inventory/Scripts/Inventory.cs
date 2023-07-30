@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using TMPro;
 public class Inventory : MonoBehaviour
 {
     public static Inventory Singleton;
@@ -13,7 +13,13 @@ public class Inventory : MonoBehaviour
     public GameObject ayak;
     public GameObject pantalon;
     public GameObject kilic;
-
+    public int armorHead;
+    public int armorChest;
+    public int armorLegs;
+    public int armorfeet;
+    public int totalarmor;
+    public TextMeshProUGUI armortext;
+    public TextMeshProUGUI swordpower;
     [SerializeField] InventorySlot[] inventorySlots;
     [SerializeField] InventorySlot[] hotbarSlots;
 
@@ -48,6 +54,8 @@ public class Inventory : MonoBehaviour
         if(carriedItem == null) return;
 
         carriedItem.transform.position = Input.mousePosition;
+       
+       
     }
 
     public void SetCarriedItem(InventoryItem item)
@@ -81,6 +89,9 @@ public class Inventory : MonoBehaviour
                     // Instantiate item.equipmentPrefab on the Player Object;
                     Debug.Log("Equipped " + item.myItem.name + " on " + tag);
                     kafa.SetActive(true);
+                    armorHead = 20;
+                    totalarmor += armorHead;
+                    armortext.text = "Defence: " + totalarmor;
                 }
                 break;
             case SlotTag.Chest:
@@ -94,6 +105,9 @@ public class Inventory : MonoBehaviour
                     // Instantiate item.equipmentPrefab on the Player Object;
                     Debug.Log("Equipped " + item.myItem.name + " on " + tag);
                     gövde.SetActive(true);
+                    armorChest = 30;
+                    totalarmor += armorChest;
+                    armortext.text = "Defence: " + totalarmor;
                 }
                 break;
             case SlotTag.Legs:
@@ -107,6 +121,9 @@ public class Inventory : MonoBehaviour
                     // Instantiate item.equipmentPrefab on the Player Object;
                     Debug.Log("Equipped " + item.myItem.name + " on " + tag);
                     pantalon.SetActive(true);
+                    armorLegs = 10;
+                    totalarmor += armorLegs;
+                    armortext.text = "Defence: " + totalarmor;
                 }
                 break;
             case SlotTag.Feet:
@@ -120,6 +137,9 @@ public class Inventory : MonoBehaviour
                     // Instantiate item.equipmentPrefab on the Player Object;
                     Debug.Log("Equipped " + item.myItem.name + " on " + tag);
                     ayak.SetActive(true);
+                    armorfeet = 5;
+                    totalarmor += armorfeet;
+                    armortext.text = "Defence: " + totalarmor;
                 }
                 break;
             case SlotTag.Sword:
@@ -133,6 +153,7 @@ public class Inventory : MonoBehaviour
                     // Instantiate item.equipmentPrefab on the Player Object;
                     Debug.Log("Equipped " + item.myItem.name + " on " + tag);
                     kilic.SetActive(true);
+                    swordpower.text = "Sword: " + 50;
                 }
                 break;
         }
