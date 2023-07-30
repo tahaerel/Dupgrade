@@ -22,7 +22,7 @@ public class Inventory : MonoBehaviour
 
     [Header("Debug")]
     [SerializeField] Button giveItemBtn;
-
+    int k = 0;
     void Awake()
     {
         Singleton = this;
@@ -96,7 +96,9 @@ public class Inventory : MonoBehaviour
 
     Item PickRandomItem()
     {
-        int random = Random.Range(0, items.Length);
-        return items[random];
+        
+        //int random = Random.Range(0, items.Length);
+        k++;
+        return items[k];
     }
 }
