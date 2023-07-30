@@ -23,7 +23,6 @@ public class Inventory : MonoBehaviour
 
     [Header("Debug")]
     [SerializeField] Button giveItemBtn;
-    int k = 0;
     void Awake()
     {
         
