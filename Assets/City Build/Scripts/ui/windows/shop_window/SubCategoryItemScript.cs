@@ -61,12 +61,12 @@ public class SubCategoryItemScript : MonoBehaviour {
 			break;
 
 		case ShopWindowScript.SubCategory.ELIXIR_COLLECTOR:
-			this.Name.text = "ELIXIR COLLECTOR";
+			this.Name.text = "STEEEL COLLECTOR";
 			this.Image.sprite = this.ElixirCollectorSprite;
 			break;
 
 		case ShopWindowScript.SubCategory.ELIXIR_STORAGE:
-			this.Name.text = "ELIXIR STORAGE";
+			this.Name.text = "STEEL STORAGE";
 			this.Image.sprite = this.ElixirStorageSprite;
 			break;
 

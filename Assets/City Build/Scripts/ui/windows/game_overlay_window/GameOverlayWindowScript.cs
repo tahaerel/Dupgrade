@@ -27,7 +27,7 @@ public class GameOverlayWindowScript : WindowScript {
 	{
 		this.GoldInfo.hasMaxValue = true;
 		this.GoldInfo.maxValue = SceneManager.instance.goldStorageCapacity;
-        this.GoldInfo.value = SceneManager.instance.numberOfGoldInStorage;
+        this.GoldInfo.value = SceneManager.numberOfGoldInStorage;
 
 		this.ElixirInfo.hasMaxValue = true;
         this.ElixirInfo.maxValue = SceneManager.instance.elixirStorageCapacity;

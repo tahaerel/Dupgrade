@@ -28,7 +28,7 @@ public class SceneManager : MonoBehaviour
 	private Dictionary<int, BaseItemScript> _itemInstances;
     
 	//resource values
-	public int numberOfGoldInStorage;
+	public static int numberOfGoldInStorage;
 	public int numberOfElixirInStorage;
 	public int numberOfDiamondsInStorage;
 
@@ -62,11 +62,11 @@ public class SceneManager : MonoBehaviour
 	{
 		this.EnterNormalMode();
         
-		this.numberOfGoldInStorage = 200;
+		numberOfGoldInStorage = 200;
 		this.numberOfElixirInStorage = 150;
-		this.numberOfDiamondsInStorage = 300;
+		this.numberOfDiamondsInStorage = 0;
 
-		this.goldStorageCapacity = 500;
+		this.goldStorageCapacity = 800;
 		this.elixirStorageCapacity = 500;
 	}
     
@@ -596,11 +596,14 @@ public class SceneManager : MonoBehaviour
 	}
 
     //RESOURCE  COLLECTION
+
+
+
     public void CollectResource(string resourceType, int amount)
 	{
 		if (resourceType == "gold")
 		{
-			this.numberOfGoldInStorage = Mathf.Clamp(this.numberOfGoldInStorage + amount, 0, goldStorageCapacity);
+			numberOfGoldInStorage = Mathf.Clamp(numberOfGoldInStorage + amount, 0, goldStorageCapacity);
 		}
 		else if (resourceType == "elixir")
 		{
@@ -619,9 +622,9 @@ public class SceneManager : MonoBehaviour
     {
         if (resourceType == "gold")
         {
-            if (this.numberOfGoldInStorage >= count)
+            if (numberOfGoldInStorage >= count)
             {
-                this.numberOfGoldInStorage -= count;
+                numberOfGoldInStorage -= count;
 				this.RefreshResourceUIs(resourceType);
                 return true;
             }
@@ -653,7 +656,7 @@ public class SceneManager : MonoBehaviour
 		if(GameOverlayWindowScript.instance != null)
 		{
 			if (resourceType == "gold")
-			    GameOverlayWindowScript.instance.CollectResource("gold", this.numberOfGoldInStorage);
+			    GameOverlayWindowScript.instance.CollectResource("gold", numberOfGoldInStorage);
 			else if (resourceType == "elixir") 
 			    GameOverlayWindowScript.instance.CollectResource("elixir", this.numberOfElixirInStorage);
 			else if (resourceType == "diamond") 
