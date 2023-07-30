@@ -19,10 +19,8 @@ Examples of these NFTs;
 -Players can improve their villages faster by buying Dupgrade tokens.<br>
 <br>
 <h2>Gameplay Video</h2>
-
-
 https://github.com/tahaerel/Dupgrade/assets/63150746/9bd99feb-dd47-4709-9693-a53b6e8ea199 
-<br>
+
 <h2> Play Demo </h2>
 
 https://pushup.games/dupgrade/
