@@ -41,12 +41,15 @@ public class GameOverlayWindowScript : WindowScript {
 		UIManager.instance.ShowShopWidow ();
 	}
 
-	public void OnClickAttackButton(){
-		SceneManager.instance.EnterAttackMode ();
+	public void OnClickCustomButton(){
+		SceneManager.instance.EnterCustomMode();
 	}
-		
-	//RESOURCE  COLLECTION
-	public void CollectResource(string resourceType, int value)
+    public void OnClickDungeonButton()
+    {
+        SceneManager.instance.EnterDungeonMode();
+    }
+    //RESOURCE  COLLECTION
+    public void CollectResource(string resourceType, int value)
     {
 
         if (resourceType == "gold")

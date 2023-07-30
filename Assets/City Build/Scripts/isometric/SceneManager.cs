@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
-
+using UnityEngine.SceneManagement;
 public class SceneManager : MonoBehaviour
 {
 
@@ -501,23 +501,19 @@ public class SceneManager : MonoBehaviour
 		SoundManager.instance.PlaySound(SoundManager.instance.BGM, true);
 	}
 
-	public void EnterAttackMode()
+	public void EnterCustomMode()
 	{
 
-		UIManager.instance.CloseAllWindows();
-		UIManager.instance.ShowSceneEnteringWindow(() =>
-		{
-			this.gameMode = Common.GameMode.ATTACK;
-			this.LoadEnemyScene();
-
-			AttackOverlayWindowScript.instance.SwordManCounter.text = this._swordManCount.ToString() + "x";
-			AttackOverlayWindowScript.instance.ArcherCounter.text = this._archerCount.ToString() + "x";
-		});
-
-		SoundManager.instance.StopAllSounds();
+		UIManager.instance.customcanvasopen();
+		
 	}
+    public void EnterDungeonMode()
+    {
 
-	public List<BaseItemScript> GetAllItems()
+		UnityEngine.SceneManagement.SceneManager.LoadScene(2);
+
+    }
+    public List<BaseItemScript> GetAllItems()
 	{
 		List<BaseItemScript> items = new List<BaseItemScript>();
 		foreach (KeyValuePair<int, BaseItemScript> entry in this._itemInstances)

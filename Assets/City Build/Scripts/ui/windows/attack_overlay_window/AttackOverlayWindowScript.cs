@@ -14,7 +14,7 @@ public class AttackOverlayWindowScript : WindowScript {
 	public Text ArcherCounter;
 
 	public void OnClickNextButton(){
-		SceneManager.instance.EnterAttackMode ();
+		SceneManager.instance.EnterCustomMode();
 	}
 
 	public void OnClickHomeGoButton(){

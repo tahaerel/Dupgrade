@@ -20,7 +20,7 @@ public class UIManager : MonoBehaviour
 	public GameObject TrainTroopsWindow;
 	public GameObject ItemOptionsWindow;
 	public GameObject InfoWindow;
-
+	public GameObject CustomCanvas;
 	/* object references */
 	public GameObject WindowsContainer;
 
@@ -120,5 +120,14 @@ public class UIManager : MonoBehaviour
     public void ShowInfoWindow()
 	{
 		this.ShowWindow(this.InfoWindow);
+	}
+
+    public void customcanvasopen()
+    {
+        CustomCanvas.SetActive(true);
+    }
+    public void customcanvasclose()
+	{
+		CustomCanvas.SetActive(false);
 	}
 }
