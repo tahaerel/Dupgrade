@@ -153,7 +153,7 @@ public class Inventory : MonoBehaviour
                     // Instantiate item.equipmentPrefab on the Player Object;
                     Debug.Log("Equipped " + item.myItem.name + " on " + tag);
                     kilic.SetActive(true);
-                    swordpower.text = "Sword: " + 50;
+                    swordpower.text = "Bow: " + 50;
                 }
                 break;
         }
