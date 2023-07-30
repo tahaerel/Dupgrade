@@ -1,14 +1,17 @@
-﻿using System.Collections;
+﻿using JetBrains.Annotations;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class BaseItemScript : MonoBehaviour
 {
+    public ProgressPanelScript GoldInfo;
+	public GameObject goldtext;
 
-
-	/* object refs */
-	public GameObject Container;
+    /* object refs */
+    public GameObject Container;
 	public Collider BoxCollider;
 	public BaseItemRendererScript Renderer;
 	public GameObject UIRoot;
@@ -450,10 +453,17 @@ public class BaseItemScript : MonoBehaviour
 
 		this.buildingItem = baseItem;
 		this._buildStartTime = Time.time;
+        goldtext = GameObject.FindGameObjectWithTag("goldvaluetag");
 
-		Debug.Log(this.buildingItem.GetPosition());
+        Debug.Log(this.buildingItem.GetPosition());
+        goldtext = GameObject.FindGameObjectWithTag("goldvaluetag");
 
-		this.Walker.WalkToPosition(this.buildingItem.GetRandomFrontCellPosition());
+        //para düşür
+        SceneManager.numberOfGoldInStorage -= 100;
+		Debug.Log(goldtext);
+		goldtext.GetComponent<Text>().text= SceneManager.numberOfGoldInStorage.ToString();
+
+        this.Walker.WalkToPosition(this.buildingItem.GetRandomFrontCellPosition());
 		this.Walker.OnFinishWalk += this.BuilderLoop;
 	}
 

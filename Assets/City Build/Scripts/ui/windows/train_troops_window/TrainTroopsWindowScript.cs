@@ -76,7 +76,7 @@ public class TrainTroopsWindowScript : WindowScript {
     public void UpdateResourcePanel()
 	{
 		this.GoldInfo.hasMaxValue = false;
-        this.GoldInfo.value = SceneManager.instance.numberOfGoldInStorage;
+        this.GoldInfo.value = SceneManager.numberOfGoldInStorage;
 
 		this.ElixirInfo.hasMaxValue = false;
         this.ElixirInfo.value = SceneManager.instance.numberOfElixirInStorage;
