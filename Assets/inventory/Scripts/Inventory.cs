@@ -12,6 +12,7 @@ public class Inventory : MonoBehaviour
     public GameObject gövde;
     public GameObject ayak;
     public GameObject pantalon;
+    public GameObject kilic;
 
     [SerializeField] InventorySlot[] inventorySlots;
     [SerializeField] InventorySlot[] hotbarSlots;
@@ -120,6 +121,19 @@ public class Inventory : MonoBehaviour
                     // Instantiate item.equipmentPrefab on the Player Object;
                     Debug.Log("Equipped " + item.myItem.name + " on " + tag);
                     ayak.SetActive(true);
+                }
+                break;
+            case SlotTag.Sword:
+                if (item == null)
+                {
+                    // Destroy item.equipmentPrefab on the Player Object;
+                    Debug.Log("Unequipped helmet on " + tag);
+                }
+                else
+                {
+                    // Instantiate item.equipmentPrefab on the Player Object;
+                    Debug.Log("Equipped " + item.myItem.name + " on " + tag);
+                    kilic.SetActive(true);
                 }
                 break;
         }
